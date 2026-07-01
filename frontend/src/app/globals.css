@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: 44 26% 96%; /* #FAF8F4 Warm White */
+  --foreground: 221 39% 11%; /* #1E2A44 Primary Navy */
+  
+  --primary: 221 39% 11%; /* #1E2A44 */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF */
+  
+  --gold: 41 46% 60%; /* #C7A46A Luxury Gold */
+  --gold-foreground: 0 0% 100%; /* #FFFFFF */
+  
+  --slate: 215 28% 17%; /* #1F2937 Dark Slate */
+  
+  --border: 41 24% 88%; /* #E7E2D8 */
+  
+  --radius: 0.75rem;
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(231, 226, 216, 0.6);
+  --glass-shadow: 0 8px 32px 0 rgba(30, 42, 68, 0.05);
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  
+  --color-primary: hsl(var(--primary));
+  --color-gold: hsl(var(--gold));
+  --color-slate: hsl(var(--slate));
+  --color-border: hsl(var(--border));
+  
+  --color-glass: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #C7A46A 0%, #D4B98C 50%, #B89150 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, #C7A46A 0%, #B89150 100%);
+  }
+
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -15px rgba(30, 42, 68, 0.1), 0 0 20px 0 rgba(199, 164, 106, 0.1);
+  }
+}

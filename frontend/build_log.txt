@@ -1,0 +1,82 @@
+﻿
+> frontend@0.1.0 build
+> next build
+
+node.exe : ΓÜá Warning: Next.js 
+inferred your workspace root, 
+but it may not be correct.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          : N 
+   otSpecified: (ΓÜá Warning:   
+  Ne...not be correct.:String   
+ ) [], RemoteException
+    + FullyQualifiedErrorId : N 
+   ativeCommandError
+ 
+ We detected multiple lockfiles 
+and selected the directory of C:
+\Users\Mayan\package-lock.json 
+as the root directory.
+ To silence this warning, set 
+`turbopack.root` in your 
+Next.js config, or consider 
+removing one of the lockfiles 
+if it's not needed.
+   See https://nextjs.org/docs/a
+pp/api-reference/config/next-con
+fig-js/turbopack#root-directory 
+for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Mayan\Desktop\LMS 
+Frist\frontend\package-lock.json
+
+Γû▓ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 27.5s
+  Running TypeScript ...
+  Finished TypeScript in 37.4s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/26) ...
+  Generating static pages using 7 workers (6/26) 
+  Generating static pages using 7 workers (12/26) 
+  Generating static pages using 7 workers (19/26) 
+Γ£ô Generating static pages using 7 workers (26/26) in 2.7s
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /admin/attendance
+Γö£ Γùï /admin/dashboard
+Γö£ Γùï /admin/enquiries
+Γö£ Γùï /admin/memberships
+Γö£ Γùï /admin/notifications
+Γö£ Γùï /admin/payments
+Γö£ Γùï /admin/reports
+Γö£ Γùï /admin/seats
+Γö£ Γùï /admin/settings
+Γö£ Γùï /admin/students
+Γö£ Γùï /contact
+Γö£ Γùï /dashboard
+Γö£ Γùï /features
+Γö£ Γùï /login
+Γö£ Γùï /student/attendance
+Γö£ Γùï /student/check-in
+Γö£ Γùï /student/dashboard
+Γö£ Γùï /student/membership
+Γö£ Γùï /student/notifications
+Γö£ Γùï /student/profile
+Γö£ Γùï /student/seats
+Γöö Γùï /student/study-hours
+
+
+Γùï  (Static)  prerendered as static content
+
